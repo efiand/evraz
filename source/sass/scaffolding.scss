@@ -1,0 +1,42 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:active:not(:disabled) {
+    opacity: 0.6;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}

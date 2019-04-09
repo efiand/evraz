@@ -1,0 +1,76 @@
+.controls {
+  position: relative;
+}
+
+.controls__ring {
+  position: absolute;
+  top: -4px;
+  left: -40px;
+  display: flex;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.controls__ring-item {
+  margin-right: 42px;
+}
+
+.controls__ring-btn {
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  color: $dark;
+  background-color: transparent;
+  border-bottom: solid 2px;
+  border-left: solid 2px;
+  transform: rotate(45deg);
+  transition: color 0.3s ease-in-out;
+
+  &--next {
+    transform: rotate(-135deg);
+  }
+
+  &:hover,
+  &:focus {
+    color: $wheat;
+  }
+}
+
+.controls__pins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 409px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.controls__pins-item {
+  margin: 0 7px;
+}
+
+.controls__pin {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: #e3e3e4;
+  background-clip: content-box;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+
+  &:not(&--active) {
+    &:hover,
+    &:focus {
+      background-color: $wheat;
+    }
+  }
+
+  &--active {
+    background-color: transparent;
+    border-color: #f5812c;
+  }
+}

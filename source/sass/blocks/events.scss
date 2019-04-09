@@ -1,0 +1,62 @@
+.events {
+  width: 360px;
+  margin: 13px 0 0 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.events__item {
+  position: relative;
+  padding: 40px 0 0 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 31px;
+    background-image: url("../img/sprite.png");
+  }
+
+  &--note {
+    width: 200px;
+
+    &::before {
+      top: 32px;
+      left: 8px;
+      width: 30px;
+      background-position: 0 -97px;
+    }
+  }
+
+  &--news {
+    width: 230px;
+    padding-top: 39px;
+
+    &::before {
+      top: 30px;
+      left: 11px;
+      width: 24px;
+      background-position: 0 -129px;
+    }
+  }
+}
+
+.events__day {
+  margin: 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: $dark;
+}
+
+.events__text {
+  margin: 5px 0 0;
+  font-size: 13px;
+  line-height: 18px;
+
+  &--note {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $red;
+  }
+}

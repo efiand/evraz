@@ -1,0 +1,23 @@
+@mixin font-face ($family, $style, $weight, $local, $url) {
+  @font-face {
+    font-style: $style;
+    font-weight: $weight;
+    font-family: "#{$family}";
+    font-display: swap;
+    src: local("#{$local}"), url("../fonts/#{$url}.woff2") format("woff2");
+  }
+}
+
+// Фон в виде обычной графики и webp для Blink
+@mixin webp-support ($pict, $ext) {
+  background-image: url("../img/#{$pict}.#{$ext}");
+
+  @media #{$blink} {
+    background-image: url("../img/#{$pict}.webp");
+  }
+}
+
+// Трекинг из Photoshop
+@mixin letter-spacing ($value) {
+  letter-spacing: #{$value / 1000}em;
+}

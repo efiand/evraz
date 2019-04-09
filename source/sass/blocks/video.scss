@@ -1,0 +1,37 @@
+.video {
+  position: relative;
+
+  background-repeat: no-repeat;
+
+  @include webp-support(tv, img);
+}
+
+.video__play {
+  position: absolute;
+  top: 38px;
+  left: 32px;
+  width: 36px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../img/sprite.png");
+  background-position: 0 -203px;
+}
+
+.video__channel {
+  margin: 0 118px;
+  padding-top: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.video__heading {
+  width: 245px;
+  margin: 9px 0 0 115px;
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $dark;
+}

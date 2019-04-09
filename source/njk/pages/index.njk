@@ -1,0 +1,13 @@
+{% extends 'layout/index.njk' %}
+
+{% block content %}
+<h1 class="visually-hidden">
+  Наша компания
+</h1>
+<section class="slider">
+  {% include 'parts/index/slider.njk' %}
+</section>
+<section class="news">
+  {% include 'parts/index/news.njk' %}
+</section>
+{% endblock %}

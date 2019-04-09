@@ -1,0 +1,140 @@
+.page-header {
+  padding: 21px 0;
+  background-image: linear-gradient(to right, $coffee $boundary, #ffffff $boundary);
+}
+
+.page-header__upper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__logo {
+  display: block;
+  margin: 20px 25px;
+}
+
+.page-header__region {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin: 0 19px 0 86px;
+  padding: 15px 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: $dark;
+  border: 2px solid #a9abae;
+  border-radius: 50%;
+}
+
+.page-header__upper-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 750px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__upper-item {
+  position: relative;
+  padding: 14px 20px 20px 60px;
+  font-weight: 300;
+  line-height: 25px;
+  color: $dark-alter;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    width: 16px;
+    height: 20px;
+    background-image: url("../img/sprite.png");
+  }
+
+  @include letter-spacing(50);
+
+  &--1 {
+    &::before {
+      width: 19px;
+      background-position: 0 0;
+    }
+  }
+
+  &--2 {
+    &::before {
+      background-position: 0 -21px;
+    }
+  }
+
+  &--3 {
+    padding-right: 26px;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  &--4 {
+    padding-right: 30px;
+
+    &::before {
+      left: 24px;
+      width: 17px;
+      background-position: 0 -42px;
+    }
+  }
+
+  &--5 {
+    &::before {
+      top: 18px;
+      left: 24px;
+      height: 16px;
+      background-position: 0 -63px;
+    }
+  }
+}
+
+.page-header__icon {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.page-header__profile {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-header__mail {
+  padding-left: 5px;
+}
+
+.page-header__user {
+  position: relative;
+  width: 70px;
+  margin: 10px 0 0 36px;
+  padding: 11px 22px 12px 50px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+  background-color: $wheat;
+  border-radius: 25px;
+}
+
+.page-header__avatar {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+
+.page-header__nav {
+  margin-top: 30px;
+}

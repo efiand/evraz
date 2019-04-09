@@ -1,0 +1,27 @@
+.mail {
+  position: relative;
+  padding: 22px 10px;
+}
+
+.mail__btn {
+  width: 23px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../img/sprite.png");
+  background-position: 0 -80px;
+}
+
+.mail__count {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 15px;
+  margin: 0;
+  padding: 3px 1px 1px;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $red;
+  border-radius: 6px;
+}

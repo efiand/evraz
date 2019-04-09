@@ -1,0 +1,24 @@
+.person {
+  position: relative;
+  padding: 28px 0 0 138px;
+}
+
+.person__avatar {
+  position: absolute;
+  top: 11px;
+  left: 70px;
+}
+
+.person__name {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.person__descr {
+  margin: 2px 0 0;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: $gray-alter;
+}
