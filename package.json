@@ -29,6 +29,6 @@
     "test": "stylelint source/sass/**/*.scss --syntax scss",
     "start": "gulp dev && gulp serve",
     "build": "gulp build",
-    "deploy": "npm run build && && gh-pages -d build",
+    "deploy": "npm run build && gh-pages -d build"
   }
 }
